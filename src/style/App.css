@@ -1,0 +1,490 @@
+#mobileDrawer * {
+  color: var(--primary) !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  margin: auto !important;
+}
+
+header {
+  position: relative !important;
+}
+
+header.MuiAppBar-root {
+  display: flex !important;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.navbar.navbar-expand-md.navbar-dark.MuiToolbar-gutters {
+  padding: 0;
+}
+
+header.MuiAppBar-root *,
+header.MuiPaper-root {
+  color: #fff;
+  box-shadow: none !important;
+}
+
+.flex {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.flex-row {
+  display: flex !important;
+  flex-direction: row !important;
+  flex: auto !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--secondary) !important;
+}
+
+header .search {
+  opacity: .95;
+  padding: 1px 5px;
+  margin: auto 20px !important;
+  height: 50px;
+  position: relative;
+  background-color: white !important;
+  margin-left: 0;
+  display: flex;
+  width: 100%;
+  border: 2px solid var(--primary) !important;
+  border-right: 0 !important;
+  border-radius: 5px;
+}
+
+header .search-mobile {
+  opacity: .95;
+  padding: 5px;
+  margin: auto !important;
+  height: 50px;
+  position: relative;
+  background-color: white !important;
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  border: 2px solid var(--primary) !important;
+  border-right: 0 !important;
+  border-radius: 5px;
+}
+
+header form.search-mobile div.MuiInputBase-root,
+header form.search div.MuiInputBase-root {
+  width: 100%;
+}
+
+header .search * {
+  background-color: white;
+  color: var(--primary);
+}
+
+.search:hover {
+  opacity: 1 !important;
+}
+
+.search-icon {
+  width: 40px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: white !important;
+  background-color: var(--primary) !important;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary) !important;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-icon * {
+  color: white !important;
+  background-color: var(--primary) !important;
+}
+
+#searchInput {
+  color: var(--primary) !important;
+  width: calc(100% - 40px) !important;
+}
+
+.master-page {
+  background-color: #f5f5f5 !important;
+  padding: 20px;
+  overflow: auto;
+  padding-bottom: 270px;
+}
+
+.img-container {
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+
+.img-container img {
+  margin: auto;
+  max-height: 250px;
+  max-width: 150px;
+}
+
+.img-big-container img {
+  margin: auto;
+  max-width: 100%;
+}
+
+.input-qty input {
+  text-align: center !important;
+}
+
+img.logo {
+  margin: auto;
+}
+
+.navbar {
+  background-color: var(--primary) !important;
+  color: white !important;
+  min-height: 64px !important;
+}
+
+.navbar .MuiBadge-badge,
+#mobileDrawer .MuiBadge-badge {
+  background-color: var(--secondary) !important;
+  color: white !important;
+}
+
+div.bg-secondary,
+div.bg-secondary * {
+  background-color: var(--secondary) !important;
+}
+
+div.bg-primary,
+div.bg-primary * {
+  background-color: var(--primary) !important;
+}
+
+div.bg-primary {
+  border-bottom: 5px solid var(--secondary) !important;
+}
+
+.btn {
+  background-color: var(--backgroundLight) !important;
+  border: 5px solid var(--primary) !important;
+  border-radius: 5px !important;
+}
+
+.cart-count-input input {
+  max-width: 75px;
+  text-align: center;
+}
+
+.product-list {
+  width: 100%;
+  list-style: none;
+}
+
+.product-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list-item:hover {
+  background-color: #bcbcbc;
+}
+
+.rounded-img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+a.color-secondary {
+  color: var(--secondary) !important;
+}
+
+.link-card {
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 1px;
+}
+
+.link-card * {
+  color: var(--primary) !important;
+}
+
+.checkout-input-container {
+  display: flex;
+}
+
+.checkout-input-container .MuiFormControl-root {
+  margin: auto;
+}
+
+.description {
+  color: black !important;
+  padding: 0 !important;
+  margin: 0 0 0 20px !important;
+}
+
+.modal-view {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modal-container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 40px;
+}
+
+.product-edit-image {
+  margin: 20px auto;
+  max-width: 320px;
+  max-height: 320px;
+}
+
+.float-action-button {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+span.MuiBadge-badge.MuiBadge-anchorOriginTopRightRectangle.MuiBadge-colorSecondary {
+  background-color: var(--secondary) !important;
+}
+
+#localPaypalContainer {
+  width: 100%;
+  display: flex;
+}
+
+#localPaypalContainer .paypal-buttons-context-iframe {
+  margin: 20px auto;
+  max-width: 320px;
+}
+
+form svg.MuiSvgIcon-root,
+form label.MuiFormLabel-root {
+  color: var(--primary) !important;
+}
+
+footer {
+  background-color: var(--primary);
+  padding: 0 20px;
+  margin: 0 !important;
+  margin-top: -250px !important;
+  width: 100%;
+  height: 250px;
+}
+
+footer div {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 10px auto;
+}
+
+footer ul a,
+footer ul a:hover,
+footer ul a:visited {
+  color: white !important;
+  margin: auto;
+  text-align: center;
+}
+
+footer ul a:hover {
+  text-decoration: underline !important;
+}
+
+footer i {
+  color: white;
+  margin: 10px;
+}
+
+.clean-input,
+.clean-input:focus {
+  border: none;
+  outline: none;
+}
+
+.clean-input::-webkit-outer-spin-button,
+.clean-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.clean-input {
+  -moz-appearance: textfield;
+}
+
+.stores-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.two-columns-list {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  padding: 20px;
+  position: relative;
+}
+
+.two-columns-list>li {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  position: relative;
+}
+
+.MuiRating-decimal {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.small-picker {
+  max-width: 150px;
+}
+
+.react-datepicker-popper {
+  z-index: 1000 !important;
+}
+
+.react-datepicker__input-container input {
+  max-width: 100%;
+}
+
+.paper-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary);
+}
+
+@media screen and (max-width: 767px) {
+  .master-page {
+    padding-bottom: 620px;
+  }
+
+  .two-columns-list {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+
+  .two-columns-list>li {
+    margin: 20px 0 !important;
+  }
+
+  footer {
+    display: block;
+    margin-top: -600px !important;
+    height: 600px !important;
+  }
+
+  footer div {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width:960px) {
+  div#collapsibleNavbar.collapse.navbar-collapse {
+    display: block !important;
+  }
+
+  header .search {
+    width: 500px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .product-list-item {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .navbar-search {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .divider-right-md {
+    border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+  }
+
+  img.logo {
+    margin: auto 0;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .stepper {
+    flex-direction: column !important;
+    margin: auto !important;
+  }
+
+  .stepper .MuiStep-root.MuiStep-horizontal.MuiStep-alternativeLabel {
+    margin: 10px auto !important;
+  }
+
+  .stepper .MuiStepConnector-line.MuiStepConnector-lineHorizontal {
+    display: none;
+  }
+
+  .product-edit-image {
+    margin: 20px;
+  }
+
+  .MuiTablePagination-root {
+    display: flex;
+    flex: auto;
+  }
+
+  .MuiTablePagination-root .MuiToolbar-gutters {
+    padding: 0 !important;
+    margin: auto !important;
+  }
+
+  .MuiTablePagination-selectRoot,
+  .MuiTablePagination-actions {
+    margin: auto !important;
+  }
+}
