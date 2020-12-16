@@ -69,6 +69,65 @@ export const updatePassword = (accessToken, newPassword, oldPassword) => {
     });
 };
 
+export const recoverForgotPassword = (email) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let options = {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'ClientId': clientId
+                },
+                body: JSON.stringify({
+                    email: email,
+                })
+            };
+
+            const response = await fetch(`${baseUrl}/auth/password/reset`, options);
+            const result = await response.json();
+            if (response.status === 201) {
+                resolve(result.Message);
+            } else {
+                reject(result.Message);
+            }
+        } catch (error) {
+            reject(error);
+        }
+
+    });
+};
+
+export const passwordReset = (recoveryToken, newPassword) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let options = {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${recoveryToken}`,
+                    'ClientId': clientId
+                },
+                body: JSON.stringify({
+                    newPassword: newPassword,
+                })
+            };
+
+            const response = await fetch(`${baseUrl}/account/password/reset`, options);
+            const result = await response.json();
+            if (response.status === 201) {
+                resolve(result.Message);
+            } else {
+                reject(result.Message);
+            }
+        } catch (error) {
+            reject(error);
+        }
+
+    });
+};
+
 // Address Information.
 export const saveAddress = (accessToken, newData) => {
     return new Promise(async (resolve, reject) => {

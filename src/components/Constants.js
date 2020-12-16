@@ -28,6 +28,9 @@ export const Constants = {
         faq: '/preguntas-frecuentes',
         stores: '/sucursales',
         contactUs: '/contacto',
+        storeList: '/negocios',
+        forgotPassword: '/contrasena-olvidada',
+        passwordReset: '/recuperar-contrasena'
     },
     ValidationMessages: {
         name: "Ingrese su(s) nombre(s).",

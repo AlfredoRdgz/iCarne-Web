@@ -34,6 +34,8 @@ import Footer from './FooterComponent';
 import ContactUs from './ContactComponent';
 import AdminStores from './AdminStoresComponent';
 import AdminStoreEdit from './AdminStoreEditComponent';
+import ForgotPassword from './ForgotPasswordComponent';
+import PasswordReset from './PasswordResetComponent';
 const UrlEndpoints = Constants.UrlEndpoints;
 
 function App({ user, validateSession, isAccountLoading }) {
@@ -68,6 +70,8 @@ function App({ user, validateSession, isAccountLoading }) {
             <Route exact path={UrlEndpoints.products} component={ProductList} />
             <Route path={UrlEndpoints.productDetail} component={ProductDetail} />
             <Route path={UrlEndpoints.cart} component={Cart} />
+            <Route path={UrlEndpoints.forgotPassword} component={ForgotPassword} />
+            <Route path={UrlEndpoints.passwordReset} component={PasswordReset} />
             <ProtectedRoute exact path={UrlEndpoints.checkout} component={Checkout} />
             <ProtectedRoute exact path={UrlEndpoints.account} component={Account} />
             <ProtectedRoute path={UrlEndpoints.accountContact} component={AccountEdit} />
