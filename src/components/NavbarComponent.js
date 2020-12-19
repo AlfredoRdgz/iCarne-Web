@@ -6,7 +6,7 @@ import React from 'react';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { Link, useHistory } from 'react-router-dom';
 import { AppBar, Toolbar, InputBase, Badge, Hidden, Drawer, ListItem, ListItemIcon, ListItemText, List, IconButton, Divider } from '@material-ui/core';
-import { Search, PersonTwoTone, ShoppingCartTwoTone, ShoppingBasketTwoTone, MenuBookTwoTone, Menu, MenuOutlined } from '@material-ui/icons';
+import { Search, PersonTwoTone, ShoppingCartTwoTone, ShoppingBasketTwoTone, MenuBookTwoTone, Menu, MenuOutlined, BusinessCenterTwoTone } from '@material-ui/icons';
 import { connect } from 'react-redux';
 import { searchProduct } from '../redux/thunks/ProductThunks';
 import { preventReload } from '../redux/actions/ProductActions';
@@ -110,6 +110,13 @@ function Navbar({ userSession, cart, search, cancelReload }) {
                 </ListItem>
               </Link>
               <Divider />
+              <Link className="nav-link" to={UrlEndpoints.companies} onClick={toggleOpen} >
+                <ListItem>
+                  <ListItemIcon> <BusinessCenterTwoTone/> </ListItemIcon>
+                  <ListItemText>Negocios</ListItemText>
+                </ListItem>
+              </Link>
+              <Divider />
               <Link className="nav-link" to={UrlEndpoints.cart} onClick={toggleOpen} >
                 <ListItem>
                   <ListItemIcon>
@@ -151,6 +158,11 @@ function Navbar({ userSession, cart, search, cancelReload }) {
                 <div className="navbar-nav">
                   <Link className="nav-link" to={UrlEndpoints.categories}>
                     Categorías <MenuBookTwoTone />
+                  </Link>
+                </div>
+                <div className="navbar-nav">
+                  <Link className="nav-link" to={UrlEndpoints.companies}>
+                    Negocios <BusinessCenterTwoTone />
                   </Link>
                 </div>
                 <div className="navbar-nav">

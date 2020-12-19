@@ -166,7 +166,7 @@ export const registerUser = (name, surname, email, password) => async (dispatch,
         const options = {
             method: 'POST',
             headers: { 'ClientId': clientId, 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: name, surname: surname, email: email, password: password, accountTypeId: 1 }),
+            body: JSON.stringify({ name: name, surname: surname, email: email, password: password }),
         }
         const response = await fetch(`${baseUrl}/auth/register/user`, options);
         let result = await response.json();
@@ -188,7 +188,7 @@ export const registerCompany = (companyName, rfc, email, phone, password) => asy
         const options = {
             method: 'POST',
             headers: { 'ClientId': clientId, 'Content-Type': 'application/json' },
-            body: JSON.stringify({ companyName: companyName, rfc: rfc, email: email, phone: phone, password: password, accountTypeId: 2 }),
+            body: JSON.stringify({ companyName: companyName, rfc: rfc, email: email, phone: phone, password: password}),
         }
         const response = await fetch(`${baseUrl}/auth/register/company`, options);
         let result = await response.json();

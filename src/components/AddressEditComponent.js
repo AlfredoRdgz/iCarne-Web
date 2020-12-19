@@ -21,8 +21,8 @@ function AddressEdit({ user, addressList, loadAddresses }) {
   const addAddress = (newData) => {
     return new Promise(async (resolve, reject) => {
       try {
-        if (newData.State !== "Jalisco") {
-          throw "Actualmente sólo se permiten envíos a domicilios en el estado de Jalisco.";
+        if ((newData.Country !== "Mexico") &&  (newData.Country !== "México")) {
+          throw "Actualmente sólo se permiten envíos a domicilios en el país de México.";
         }
         const result = await saveAddress(user?.AccessToken, newData);
         newData.Id = result.insertedId;
@@ -41,8 +41,8 @@ function AddressEdit({ user, addressList, loadAddresses }) {
   const updateAddress = (newData, oldData) => {
     return new Promise(async (resolve, reject) => {
       try {
-        if (newData.State !== "Jalisco") {
-          throw "Actualmente sólo se permiten envíos a domicilios en el estado de Jalisco.";
+        if ((newData.Country !== "Mexico") &&  (newData.Country !== "México")) {
+          throw "Actualmente sólo se permiten envíos a domicilios en el país de México.";
         }
         await updateExistingAddress(user?.AccessToken, oldData, newData);
         const data = [...addresses];

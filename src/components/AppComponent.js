@@ -36,6 +36,7 @@ import AdminStores from './AdminStoresComponent';
 import AdminStoreEdit from './AdminStoreEditComponent';
 import ForgotPassword from './ForgotPasswordComponent';
 import PasswordReset from './PasswordResetComponent';
+import CompanyList from './CompanyListComponent';
 const UrlEndpoints = Constants.UrlEndpoints;
 
 function App({ user, validateSession, isAccountLoading }) {
@@ -67,6 +68,7 @@ function App({ user, validateSession, isAccountLoading }) {
             <Route exact path={UrlEndpoints.companyRegister} component={CompanyRegister} />
             <Route exact path={UrlEndpoints.clientRegister} component={UserRegister} />
             <Route path={UrlEndpoints.categories} component={CategoryList} />
+            <Route path={UrlEndpoints.companies} component={CompanyList} />
             <Route exact path={UrlEndpoints.products} component={ProductList} />
             <Route path={UrlEndpoints.productDetail} component={ProductDetail} />
             <Route path={UrlEndpoints.cart} component={Cart} />

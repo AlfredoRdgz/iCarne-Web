@@ -10,6 +10,7 @@ export const Constants = {
         companyRegister: '/registro/empresa',
         clientRegister: '/registro/cliente',
         categories: '/categorias',
+        companies: '/negocios',
         products: '/productos',
         productDetail: '/productos/detalle',
         cart: '/carrito',
