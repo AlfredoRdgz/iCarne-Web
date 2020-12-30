@@ -24,6 +24,7 @@ export const Constants = {
         accountProductEdit: '/cuenta/productos/editar',
         accountStores: '/cuenta/tiendas',
         accountStoreEdit: '/cuenta/tiendas/editar',
+        companyPortal: '/cuenta/registros-de-ventas',
         privacy: '/aviso-privacidad',
         tou: '/terminos-y-condiciones',
         faq: '/preguntas-frecuentes',

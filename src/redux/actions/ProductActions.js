@@ -59,7 +59,7 @@ export const loadCategoriesSuccess = (categories) => {
 }
 
 export const loadCategoriesFailed = (error) => {
-    alert(error.message);
+    alert(error);
     return {
         type: Constants.LOAD_CATEGORIES_FAILED
     };

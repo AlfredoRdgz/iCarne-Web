@@ -16,7 +16,7 @@ function Account({ user, profile, attemptLogout, loadContactInfo }) {
   // #region private properties.
   const { IsAdmin, AccessToken } = user;
   const { Name } = profile;
-  const [mailLink, setMailLink] = React.useState(`mailto:info@carnessupremaslapaz.com?subject=Solicitud%20de%20aclaraci%C3%B3n%20cliente%20${profile.Email}`);
+  const [mailLink, setMailLink] = React.useState(`mailto:info@icarne.mx?subject=Solicitud%20de%20aclaraci%C3%B3n%20cliente%20${profile.Email}`);
   // #endregion private properties.
 
   // #region public methods.
@@ -31,7 +31,7 @@ function Account({ user, profile, attemptLogout, loadContactInfo }) {
   }, []);
 
   useEffect(() => {
-    setMailLink(`mailto:info@carnessupremaslapaz.com?subject=Solicitud%20de%20aclaraci%C3%B3n%20cliente%20${profile.Email}`);
+    setMailLink(`mailto:info@icarne.mx?subject=Solicitud%20de%20aclaraci%C3%B3n%20cliente%20${profile.Email}`);
   }, [profile]);
   // #endregion private methods.
 
@@ -59,6 +59,11 @@ function Account({ user, profile, attemptLogout, loadContactInfo }) {
             <Link to={UrlEndpoints.accountStores}>
               <Card className="link-card">
                 <Store /> Mis sucursales
+              </Card>
+            </Link>
+            <Link to={UrlEndpoints.companyPortal}>
+              <Card className="link-card">
+                <Home /> Desglose de ventas
               </Card>
             </Link>
           </div>) : ""

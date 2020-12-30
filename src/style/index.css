@@ -37,12 +37,20 @@ body {
   background-color: #f5f5f5 !important;
 }
 
-.color-primary {
+a.color-primary, .color-primary {
   color: var(--primary) !important;
 }
 
 .color-secondary {
   color: var(--secondary) !important;
+}
+
+.bg-color-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-color-primary {
+  background-color: var(--primary) !important;
 }
 
 .MuiPaper-root {

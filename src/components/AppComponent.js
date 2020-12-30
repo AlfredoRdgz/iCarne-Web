@@ -4,6 +4,7 @@
 // </summary>
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import CompanyPortal from './CompanyPortalComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from './NavbarComponent';
@@ -72,6 +73,7 @@ function App({ user, validateSession, isAccountLoading }) {
             <Route exact path={UrlEndpoints.products} component={ProductList} />
             <Route path={UrlEndpoints.productDetail} component={ProductDetail} />
             <Route path={UrlEndpoints.cart} component={Cart} />
+            <Route path={UrlEndpoints.companyPortal} component={CompanyPortal} />
             <Route path={UrlEndpoints.forgotPassword} component={ForgotPassword} />
             <Route path={UrlEndpoints.passwordReset} component={PasswordReset} />
             <ProtectedRoute exact path={UrlEndpoints.checkout} component={Checkout} />

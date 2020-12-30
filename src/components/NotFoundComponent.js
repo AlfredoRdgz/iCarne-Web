@@ -14,24 +14,24 @@ function NotFound() {
       <h1> Oops! Algo salió mal</h1>
       <h2> El contenido que buscó no pudo ser encontrado</h2>
 
-      <img src={process.env.PUBLIC_URL + "/img/icarne.png"} alt="iCarne" />
+      <img style={{maxWidth: '280px'}} src={process.env.PUBLIC_URL + "/img/icarne.png"} alt="iCarne" />
 
       <p> Verifica que el enlace con el que ingresaste sea un enlace válido o intenta con otra búsqueda. Puedes redirigirte a cualquiera de las siguientes opciones: </p>
 
-      <div className="row" style={{ margin: 'auto' }}>
-        <ul style={{ margin: 'auto' }}>
+      <div>
+        <ul style={{ textAlign: 'center', listStyle: 'none' }}>
           <li>
-            <Link className="nav-link color-secondary" to={UrlEndpoints.products}>
+            <Link className="nav-link color-primary" to={UrlEndpoints.products}>
               Productos
             </Link>
           </li>
           <li>
-            <Link className="nav-link color-secondary" to={UrlEndpoints.cart}>
+            <Link className="nav-link color-primary" to={UrlEndpoints.cart}>
               Mi carrito
             </Link>
           </li>
           <li>
-            <Link className="nav-link color-secondary" to={UrlEndpoints.account}>
+            <Link className="nav-link color-primary" to={UrlEndpoints.account}>
               Perfil
             </Link>
           </li>

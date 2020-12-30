@@ -39,7 +39,6 @@ export const loadCategories = () => async (dispatch, getState) => {
         dispatch(loadCategoriesSuccess(categories));
     } catch (error) {
         dispatch(loadCategoriesFailed());
-        console.log(error);
     }
 };
 
